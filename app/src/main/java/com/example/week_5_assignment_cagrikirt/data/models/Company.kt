@@ -1,4 +1,4 @@
-package com.example.week_5_assignment_cagrikirt.data.model
+package com.example.week_5_assignment_cagrikirt.data.models
 
 
 import com.google.gson.annotations.SerializedName

@@ -9,18 +9,29 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.week_5_assignment_cagrikirt.R
+import com.example.week_5_assignment_cagrikirt.data.database.FavoriteRoomDatabase
+
+import com.example.week_5_assignment_cagrikirt.data.database.PostRepository
+
 import com.example.week_5_assignment_cagrikirt.ui.posts.adapter.PostsAdapter
+
 import retrofit2.Call
 import retrofit2.Response
 
 class PostsFragment : Fragment() {
     private lateinit var rvPostList: RecyclerView
+    private lateinit var repository: PostRepository
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
+        var postDAO = FavoriteRoomDatabase.getDatabase(requireContext()).postDAO()
+        repository = PostRepository(postDAO)
+
+
+
         return inflater.inflate(R.layout.fragment_posts, container, false)
     }
 
@@ -36,9 +47,7 @@ class PostsFragment : Fragment() {
                 if (response.isSuccessful) {
                     val post = response.body()
                     post?.let { safePosts ->
-                        rvPostList.adapter = PostsAdapter().apply {
-                            submitList(safePosts)
-                        }
+                        rvPostList.adapter = PostsAdapter(safePosts, repository)
                     }
                 }
             }

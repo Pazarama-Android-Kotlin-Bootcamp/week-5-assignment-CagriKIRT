@@ -1,17 +1,15 @@
 package com.example.week_5_assignment_cagrikirt.ui.users
 
 import ApiClient
-import Post
 import User
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.week_5_assignment_cagrikirt.R
-import com.example.week_5_assignment_cagrikirt.ui.posts.adapter.PostsAdapter
 import com.example.week_5_assignment_cagrikirt.ui.users.adapter.UserAdapter
 import retrofit2.Call
 import retrofit2.Response

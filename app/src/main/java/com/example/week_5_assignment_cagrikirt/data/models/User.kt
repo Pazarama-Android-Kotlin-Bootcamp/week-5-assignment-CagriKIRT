@@ -1,6 +1,6 @@
 
 import com.google.gson.annotations.SerializedName
-import com.example.week_5_assignment_cagrikirt.data.model.Company
+import com.example.week_5_assignment_cagrikirt.data.models.Company
 
 
 data class User(

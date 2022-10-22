@@ -1,7 +1,7 @@
 
 
 
-import com.example.week_5_assignment_cagrikirt.data.model.Geo
+import com.example.week_5_assignment_cagrikirt.data.models.Geo
 import com.google.gson.annotations.SerializedName
 
 

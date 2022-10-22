@@ -15,4 +15,9 @@
         android:name="com.example.week_5_assignment_cagrikirt.ui.posts.PostsFragment"
         android:label="fragment_posts"
         tools:layout="@layout/fragment_posts" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.week_5_assignment_cagrikirt.ui.favorites.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
 </navigation>
