@@ -3,7 +3,7 @@ import com.google.gson.annotations.SerializedName
 import com.example.week_5_assignment_cagrikirt.data.model.Company
 
 
-data class Users(
+data class User(
     @SerializedName("address")
     val address: Address?,
     @SerializedName("company")

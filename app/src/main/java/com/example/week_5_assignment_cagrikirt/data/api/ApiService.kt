@@ -1,12 +1,11 @@
 package com.example.week_5_assignment_cagrikirt.data.api
 
 import Post
-import Users
+import User
 
 import retrofit2.Call
 import retrofit2.http.DELETE
 import retrofit2.http.GET
-import retrofit2.http.Header
 import retrofit2.http.Path
 
 /**
@@ -18,7 +17,7 @@ interface ApiService {
     fun getPosts(): Call<List<Post>>
 
     @GET("users")
-    fun getUsers(): Call<List<Users>>
+    fun getUsers(): Call<List<User>>
 
     @DELETE("posts/{id}")
     fun deletePost(@Path("{id}") id: String): Call<Post>
