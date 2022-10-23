@@ -1,6 +1,6 @@
 package com.example.week_5_assignment_cagrikirt.data.database
 
-import Post
+import com.example.week_5_assignment_cagrikirt.data.models.Post
 import com.example.week_5_assignment_cagrikirt.data.data_access.PostDAO
 
 class PostRepository(private val postDAO: PostDAO) {

@@ -1,6 +1,6 @@
 package com.example.week_5_assignment_cagrikirt.ui.posts.adapter
 
-import Post
+import com.example.week_5_assignment_cagrikirt.data.models.Post
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,6 +25,7 @@ class PostsAdapter(var posts: List<Post>, repository: PostRepository) :
     }
 
     class PostViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+
         private val tvTitle = view.findViewById<TextView>(R.id.tvTitleValue)
         private val tvBody = view.findViewById<TextView>(R.id.tvBodyTitle)
         private val imageView = view.findViewById<ImageView>(R.id.imageView)
@@ -32,9 +33,6 @@ class PostsAdapter(var posts: List<Post>, repository: PostRepository) :
         fun bind(post: Post) {
             tvTitle.text = post.title
             tvBody.text = post.body
-            imageView.setOnClickListener {
-
-            }
         }
     }
 
@@ -42,13 +40,5 @@ class PostsAdapter(var posts: List<Post>, repository: PostRepository) :
         return posts.size
     }
 
-/*    class PostsDiffUtil : DiffUtil.ItemCallback<Post>() {
-        override fun areItemsTheSame(oldItem: Post, newItem: Post): Boolean {
-            return oldItem.id == newItem.id
-        }
 
-        override fun areContentsTheSame(oldItem: Post, newItem: Post): Boolean {
-            return oldItem == newItem
-        }
-    }*/
 }

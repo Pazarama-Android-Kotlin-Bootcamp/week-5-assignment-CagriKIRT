@@ -1,7 +1,7 @@
 package com.example.week_5_assignment_cagrikirt.data.api
 
-import Post
-import User
+import com.example.week_5_assignment_cagrikirt.data.models.Post
+import com.example.week_5_assignment_cagrikirt.data.models.User
 
 import retrofit2.Call
 import retrofit2.http.DELETE

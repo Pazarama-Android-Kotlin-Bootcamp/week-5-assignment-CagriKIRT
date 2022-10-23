@@ -1,6 +1,6 @@
 package com.example.week_5_assignment_cagrikirt.ui.posts
 
-import Post
+import com.example.week_5_assignment_cagrikirt.data.models.Post
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment

@@ -1,6 +1,6 @@
 package com.example.week_5_assignment_cagrikirt.data.data_access
 
-import Post
+import com.example.week_5_assignment_cagrikirt.data.models.Post
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -9,12 +9,12 @@ import androidx.room.Query
 @Dao
 interface PostDAO  {
     @Insert
-    suspend fun insertPost(post:Post)
+     fun insertPost(post: Post)
 
     @Delete
-    suspend fun deletePost(post:Post)
+     fun deletePost(post: Post)
 
     @Query("SELECT * FROM favorite_posts")
-    suspend fun getAllFavorites():List<Post>
+     fun getAllFavorites():List<Post>
 
 }

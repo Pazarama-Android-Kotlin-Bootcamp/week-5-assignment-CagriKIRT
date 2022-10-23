@@ -1,7 +1,7 @@
 package com.example.week_5_assignment_cagrikirt.ui.users
 
 import ApiClient
-import User
+import com.example.week_5_assignment_cagrikirt.data.models.User
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater

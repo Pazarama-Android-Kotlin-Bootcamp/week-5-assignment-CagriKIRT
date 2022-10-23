@@ -1,6 +1,6 @@
 package com.example.week_5_assignment_cagrikirt.data.database
 
-import Post
+import com.example.week_5_assignment_cagrikirt.data.models.Post
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -26,7 +26,7 @@ abstract class FavoriteRoomDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     FavoriteRoomDatabase::class.java,
-                    "room_database"
+                    "app_database"
                 ).build()
                 INSTANCE = instance
                 return instance

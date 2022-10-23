@@ -1,6 +1,6 @@
 package com.example.week_5_assignment_cagrikirt.ui.users.adapter
 
-import User
+import com.example.week_5_assignment_cagrikirt.data.models.User
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
